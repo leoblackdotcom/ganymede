@@ -1,0 +1,68 @@
+/*
+theme name: Ganymede
+author: Lucas M. Shepherd <lucas@thebluemark.com>
+author uri: thebluemark.com
+description: Child theme for Avada created for LeoStella.
+template: Avada
+text domain: ganymede
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+#mission-row .wpb_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: stretch;
+	    align-content: stretch;
+height: 100%;
+}
+
+#mission-row .wpb_single_image {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+}
+.ex_s_lick-slide {
+	float: none!important;
+}
+.ex_s_lick-track {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex!important;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}
+
+.ex_s_lick-track > div:nth-child(1) { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }
+.ex_s_lick-track > div:nth-child(2) { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }
+.ex_s_lick-track > div:nth-child(3) { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }
+.ex_s_lick-track > div:nth-child(4) { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
+.ex_s_lick-track > div:nth-child(5) { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+
+/*.post-content h4 {
+	text-transform: capitalize!important;
+}*/
