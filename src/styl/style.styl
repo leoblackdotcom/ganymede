@@ -1,0 +1,64 @@
+/*!
+theme name Ganymede
+author Lucas M. Shepherd <lucas@thebluemark.com>
+author uri thebluemark.com
+description Child theme for Avada created for LeoStella.
+template Avada
+text domain ganymede
+*/
+
+// Careers
+
+$color-darkest-blue =   #0C1A27
+$color-darker-blue =    #0F2940
+$color-dark-blue =      #103059
+$color-blue =           #3D9DF3
+$color-leostella-blue = #A9D0F9
+$color-accent =         #5EF2F2
+
+$color-primary = $color-darkest-blue
+
+body.careers
+  background-color $color-primary !important
+  padding 0
+  margin 0
+  width 100%
+  height 100%
+
+
+// Custom CSS
+
+#mission-row .wpb_wrapper 
+  display flex
+  flex-flow column nowrap
+  justify-content flex-start
+  align-items center 
+  align-content stretch
+  height 100%
+
+#mission-row .wpb_single_image 
+  flex 1 0 auto
+
+.ex_s_lick-slide 
+	float none!important
+
+.ex_s_lick-track 
+  display flex!important
+  flex-flow row nowrap
+  justify-content flex-start
+  align-items stretch
+
+.ex_s_lick-track > div:nth-child(1)
+  order 3 
+.ex_s_lick-track > div:nth-child(2)
+  order 4 
+.ex_s_lick-track > div:nth-child(3)  
+  order 5 
+.ex_s_lick-track > div:nth-child(4)  
+  order 2 
+.ex_s_lick-track > div:nth-child(5)  
+  order 1 
+
+/*.post-content h4 
+	text-transform capitalize!important
+*/
