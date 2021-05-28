@@ -1,7 +1,7 @@
 /*!
 theme name Ganymede
-author Lucas M. Shepherd <lucas@thebluemark.com>
-author uri thebluemark.com
+author Lucas M. Shepherd <lucas@leoblack.com>
+author uri leoblack.com
 description Child theme for Avada created for LeoStella.
 template Avada
 text domain ganymede
@@ -9,24 +9,161 @@ text domain ganymede
 
 // Careers
 
-$color-darkest-blue =   #0C1A27
-$color-darker-blue =    #0F2940
-$color-dark-blue =      #103059
-$color-blue =           #3D9DF3
+$color-darkest-blue = #0C1A27
+$color-darker-blue = #0F2940
+$color-dark-blue = #103059
+$color-blue = #3D9DF3
 $color-leostella-blue = #A9D0F9
-$color-accent =         #5EF2F2
+$color-accent = #5EF2F2
 
 $color-primary = $color-darkest-blue
 
-body.careers
-  background-color $color-primary !important
-  padding 0
-  margin 0
+// Logo
+
+.fusion-header
+  .fusion-logo
+    max-width 194px
+    /*
+  &.fusion-sticky-shadow
+    .fusion-logo
+      max-width 160px
+    .fusion-main-menu
+      height 60px
+*/
+// Type
+
+body .post-content
+  h1,h2,h3,h4,h5,h6
+    font-weight bold
+  h4
+    line-height 1.2
+    font-size 24px
+    letter-spacing -0.25px
+  .light-text
+    color white
+    h1,h2,h3,h4,h5,h6
+      color white
+
+body .post-content .blog-poster:not(.bp-featured)
+  h4, h5, h6
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  .vc_grid-item
+    .vc_grid-item-mini
+      height 100%
+      display flex
+      flex-flow column
+      justify-content flex-start
+      align-items stretch
+      align-content stretch
+      height 100%
+
+      .vc_gitem_row
+        height 100%
+
+      .vc_gitem-zone
+        flex 1 0 auto
+
+        .vc_gitem-zone-mini
+          height 100%
+
+          .vc_gitem-col
+            height 100%
+            display flex
+            flex-flow column
+            justify-content flex-start
+            align-items stretch
+            align-content stretch
+
+            & > *
+              flex 0 1 auto
+
+              &.vc_gitem-post-data-source-post_excerpt
+                flex 1 0 auto
+
+body .vc_custom_1621945641826 
+  overflow visible!important
+
+body .post-content .blog-poster.bp-featured
+  display block
+  min-height 300px
+  h4, h5, h6
+    font-size: 24px;
+  .vc_grid-item
+    height 300px!important
+    .vc_grid-item-mini
+      height 100%
+      display flex
+      flex-flow row wrap
+      justify-content flex-start
+      align-items stretch
+      align-content stretch
+      height 100%
+
+      .vc_gitem_row
+        height 100%
+
+      .vc_gitem-zone
+        flex 1 0 auto
+
+        .vc_gitem-zone-mini
+          height 100%
+
+          .vc_gitem-col
+            height 100%
+            display flex
+            flex-flow column
+            justify-content flex-start
+            align-items stretch
+            align-content stretch
+
+            & > *
+              flex 0 1 auto
+
+              &.vc_gitem-post-data-source-post_excerpt
+                flex 1 0 auto
+
+
+
+  
+
+
+// Home
+
+#main-banner
+  h1,h2,h3,h4,h5,h6
+    text-transform uppercase
+  p
+    font-size 18px
+    line-height 24px
+
+  .readable-text
+    p
+      max-width 30em
+
+body .orbiting-sats
+  position absolute
+  bottom 10%
+  right 0
+  max-width 1000px
   width 100%
+  z-index 3
+  max-width 65vw
+
+body .orbiting-sats-content
+  position relative
+  z-index 4
+
+body .upb_video-src
+  width auto
   height 100%
+  object-fit cover
 
+//body .vc_btn3.vc_btn3-style-custom
+  //background none!important
 
-// Custom CSS
+// 
 
 #mission-row .wpb_wrapper 
   display flex
@@ -62,3 +199,433 @@ body.careers
 /*.post-content h4 
 	text-transform capitalize!important
 */
+
+// -------------- Careers
+
+/*body.page-id-1579 #main, 
+body.page-id-1579 .layout-boxed-mode #main, 
+body.page-id-1579 .layout-boxed-mode.avada-footer-fx-sticky .above-footer-wrapper, 
+body.page-id-1579 .layout-boxed-mode.avada-footer-fx-sticky-with-parallax-bg-image .above-footer-wrapper, 
+body.page-id-1579 .layout-wide-mode #main, 
+body.page-id-1579 .layout-wide-mode #wrapper, 
+body.page-id-1579, 
+html body.custom-background.page-id-1579
+  background-color #0C1A27!important
+  color #fff
+
+body.page-id-1579 a
+  color #3D9DF3!important*/
+
+body .pre-title
+  text-transform uppercase
+  color #818181
+  letter-spacing 1px
+  font-size 12px
+  font-weight 300
+  font-family "Montserrat", sans-serif
+  position relative
+  display inline-block
+  margin-left -15px
+  margin-bottom 30px!important
+  &:before
+    content ""
+    width 60px
+    height 1px
+    background-color #818181
+    position absolute
+    left 100%
+    top 50%
+    margin-left 15px
+    margin-top -0.5px
+  &.pt-centered,
+  &.pt-center
+    display block
+    margin 0 auto 30px!important
+    &:before
+      left 50%
+      top auto
+      bottom -10px
+      margin-left -30px
+span
+  &.pre-title
+    margin-bottom 0!important
+    margin-left 0
+    display block
+    &:before
+      content none
+
+.gradient-end
+  color #fff
+  position relative
+
+#footer-banner,
+#careers-banner,
+.gradient-end-white,
+.gradient-end-blank
+  position relative
+
+.gradient-end:before,
+.gradient-end-white:before,
+.gradient-end-blank:before
+  content ""
+  position absolute
+  left 0
+  bottom 0
+  height 380px
+  width 100%
+  display block
+  background -webkit-gradient(linear, left bottom, left top, from(rgba(19,19,19,1)), to(rgba(19,19,19,0)))
+  background -o-linear-gradient(bottom, rgba(19,19,19,1), rgba(19,19,19,0))
+  background linear-gradient(0deg, rgba(19,19,19,1), rgba(19,19,19,0))
+  display block!important
+  z-index 1
+
+.gradient-end-white:before
+  background -webkit-gradient(linear, left bottom, left top, from(rgba(12,26,39,1)), to(rgba(12,26,39,0)))
+  background -o-linear-gradient(bottom, rgba(12,26,39,1), rgba(12,26,39,0))
+  background linear-gradient(0deg, rgba(12,26,39,1), rgba(12,26,39,0))
+
+.gradient-end-blank:before
+  background -webkit-gradient(linear, left bottom, left top, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)))
+  background -o-linear-gradient(bottom, rgba(255,255,255,1), rgba(255,255,255,0))
+  background linear-gradient(0deg, rgba(255,255,255,1), rgba(255,255,255,0))
+
+.post-content
+  .light-text
+    h1,h2,h3,h4,h5,h6
+      color #fff!important
+
+h1,h2,h3,h4,h5,h6
+  font-weight bold!important
+  color $color-darkest-blue!important
+h1
+  font-size 48px!important
+  line-height 48px!important
+
+h2
+  font-size 32px!important
+  line-height 36px!important
+
+h3,h4,h5
+  font-size 18px!important
+  line-height 24px!important
+
+.careers-card
+  h3
+    margin-top 0
+    -webkit-box-flex 1
+    -ms-flex 1 0 auto
+    flex 1 0 auto
+  & > .wpb_wrapper
+    display -webkit-box
+    display -ms-flexbox
+    display flex
+    -webkit-box-orient vertical
+    -webkit-box-direction normal
+    -ms-flex-flow column nowrap
+    flex-flow column nowrap
+    -webkit-box-pack start
+    -ms-flex-pack start
+    justify-content flex-start
+    -webkit-box-align stretch
+    -ms-flex-align stretch
+    align-items stretch
+    padding 20px
+    background-color #0F2940
+    border-radius 3px
+    height 100%
+
+    #career-paths &
+      background-color rgba(255,255,255,1)
+
+    #footer-banner &
+      background-color rgba(255,255,255,1)
+
+#icon-cards
+  .careers-card
+    h3
+      -webkit-box-flex 0
+      -ms-flex 0 1 auto
+      flex 0 1 auto
+
+.icon-cards
+  .careers-card
+    & > .wpb_wrapper
+      min-height 0
+      background none
+
+.post-content .icon-cards h2, 
+.post-content .icon-cards h3, 
+.post-content .icon-cards h4
+  color #fff!important
+
+.post-content
+  .icon-cards
+    p
+      font-size 14px
+
+.careers-card-list
+  .vc_column-inner
+    & > .wpb_wrapper
+      display -webkit-box
+      display -ms-flexbox
+      display flex
+      -webkit-box-orient horizontal
+      -webkit-box-direction normal
+      -ms-flex-flow row wrap
+      flex-flow row wrap
+      -ms-flex-pack distribute
+      justify-content space-around
+      -webkit-box-align stretch
+      -ms-flex-align stretch
+      align-items stretch
+      -ms-flex-line-pack stretch
+      align-content stretch
+      & > *
+        -webkit-box-flex 0
+        -ms-flex 0 1 50%
+        flex 0 1 50%
+        padding 8px
+
+@media screen and (max-width: 767px)
+  .careers-card-list
+    .vc_column-inner
+      & > .wpb_wrapper
+        & > *
+          -webkit-box-flex 1
+          -ms-flex 1 0 100%
+          flex 1 0 100%
+
+.job-list-ul
+  h3
+    margin-top 0
+
+.gradient-bg
+  background -webkit-gradient(linear,left top, left bottom,from(#0d2030),to(#0C1A27))
+  background -o-linear-gradient(top,#0d2030,#0C1A27)
+  background linear-gradient(180deg,#0d2030,#0C1A27)
+
+.bring-to-front
+  position relative
+  z-index 5
+
+ul
+  &.arrow-list
+    li
+      line-height 1.2
+      margin-bottom 20px
+  &.jobs-list-ul
+    margin 0 0 30px
+    padding 0
+    ul
+      padding 0
+
+.featured-text
+  p
+    font-size 150%
+    line-height 1.5
+
+.testi-image
+  min-height 400px
+
+.fusion-footer-copyright-area
+  position absolute!important
+  background rgba(0,0,0,.2)!important
+  margin-top -120px
+  bottom 0
+  left 0
+  width 100%
+
+  .fusion-copyright-notice,
+  .fusion-copyright-notice a
+    color rgba(166,202,235,.4)
+
+.footer-title
+  h3
+    font-size 24px!important
+    margin 0!important
+
+@media screen and (max-width: 767px)
+  .footer-title
+    h3
+      line-height 28px!important
+      text-align center
+
+.vc_btn3.vc_btn3-style-outline, 
+.vc_btn3.vc_btn3-style-outline-custom, 
+.vc_btn3.vc_btn3-style-outline-custom:focus, 
+.vc_btn3.vc_btn3-style-outline-custom:hover, 
+.vc_btn3.vc_btn3-style-outline:focus, 
+.vc_btn3.vc_btn3-style-outline:hover
+  border-width 1px!important
+
+.vc_general
+  &.vc_btn3
+    font-family "Montserrat", sans-serif
+    font-size 15px
+    font-weight 300
+    margin 0
+
+.circle-icon-list
+  .uavc-list
+    li
+      margin 20px 0!important
+
+.jobs-list-ul
+  li
+    display block
+    padding 8px
+    list-style-type none
+    position relative
+    i
+      &.fas
+        position absolute
+        top 50%
+        right 30px
+        color #a6caeb
+        width 20px
+        height 20px
+        font-size 14px
+        line-height 20px
+        text-align center
+        display block
+        margin -9px 0 0
+        z-index 1
+        pointer-events none
+        cursor pointer
+    a
+      width 100%
+      display -webkit-box
+      display -ms-flexbox
+      display flex
+      -webkit-box-orient vertical
+      -webkit-box-direction normal
+      -ms-flex-flow column nowrap
+      flex-flow column nowrap
+      -webkit-box-pack center
+      -ms-flex-pack center
+      justify-content center
+      -webkit-box-align start
+      -ms-flex-align start
+      align-items flex-start
+      min-height 100px
+      padding 20px 60px 20px 20px
+      background-color #fff
+      border-radius 3px
+      -webkit-transition background-color 0.3s
+      -o-transition background-color 0.3s
+      transition background-color 0.3s
+      *
+        -webkit-box-flex 1
+        -ms-flex 1 0 100%
+        flex 1 0 100%
+      span
+        &.pre-title
+          margin 4px 0
+      h3
+        margin 4px 0
+
+.jobs-list-ul li a:hover,
+.jobs-list-ul li a:active
+  background-color #0C1A27
+  color #fff
+  h1,h2,h3,h4,h5,h6
+    color #fff!important
+
+
+/*
+.fusion-header-wrapper,
+.fusion-header-wrapper .fusion-header-v1,
+.fusion-top-header .fusion-header
+  background none!important
+
+.fusion-header-wrapper
+    position absolute!important
+    width 100%
+
+header a,
+.fusion-main-menu .fusion-main-menu-icon:after
+  color #fff!important
+
+.fusion-has-main-nav-icon-circle
+  .fusion-main-menu
+    .fusion-main-menu-icon
+      &:after
+        border-color #fff!important
+
+.fusion-header
+  &.fusion-sticky-shadow
+    -webkit-backdrop-filter blur(8px)
+    backdrop-filter blur(8px)
+    box-shadow none!important
+    background-color rgba(19,19,19,.08)!important
+*/
+
+// Gallery
+
+#gallery-lg .slick-prev,
+#gallery-small .slick-prev
+  margin-left 40px
+
+#gallery-lg .slick-next,
+#gallery-small .slick-next
+  margin-right 40px
+
+.slick-next[aria-disabled="true"],
+.slick-prev[aria-disabled="true"]
+  opacity .2
+  cursor default
+
+#gallery-lg .slick-next,
+#gallery-lg .slick-prev,
+#gallery-small .slick-next,
+#gallery-small .slick-prev
+  top 100%
+  margin-top 20px
+
+// Footer
+
+.foot-note
+  display flex 
+  flex-flow row nowrap
+  justify-content flex-start
+  align-items center
+  align-content stretch
+  @media screen and (max-width: 767px)
+    flex-direction column
+    text-align center
+  .fn-image
+    margin-right 20px
+  .fn-content
+    font-weight bold
+    font-size 36px
+    color #fff
+    line-height 1.2
+
+.foot-copy
+  display flex
+  flex-flow row wrap
+  justify-content flex-start
+  align-items center
+  align-content stretch
+  & > *
+    flex 1 0 auto
+  .fc-right
+    text-align right
+
+body.single .fusion-footer-copyright-area
+  background $color-darkest-blue!important
+
+// Responsive
+
+@media screen and (max-width: 767px)
+  .testi-image
+    order -1!important
+  .fusion-mobile-menu-icons
+    margin-top 40px
+  body:not(.mobile-menu-design-flyout)
+      .fusion-mobile-nav-item
+        a
+          background rgba(19,19,19,.4)
+          -webkit-backdrop-filter blur(8px)
+          backdrop-filter blur(8px)

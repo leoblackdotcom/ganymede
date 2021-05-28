@@ -1,6 +1,6 @@
 {
   "name": "ganymede",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LeoStella WordPress Theme",
   "main": "gulpfile.js",
   "scripts": {
@@ -36,9 +36,9 @@
   },
   "postcss": {
     "plugins": {
-     "autoprefixer": {},
-     "postcss-combine-media-query": {},
-     "postcss-combine-duplicated-selectors": {}
+      "autoprefixer": {},
+      "postcss-combine-media-query": {},
+      "postcss-combine-duplicated-selectors": {}
     }
   },
   "browserslist": [
